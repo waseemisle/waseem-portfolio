@@ -298,16 +298,58 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-8 rounded-[1.5rem] border border-white/10 bg-white/5 p-4 sm:p-6">
-            <iframe
-              src="https://docs.google.com/forms/d/e/1QDe-KzZwfoF4DERBopuiqIWINM8qWIrLtZqp-kbhVk0/viewform?embedded=true"
-              className="min-h-[700px] w-full rounded-[1rem] border-0"
-              title="Contact form"
-              allowFullScreen
-            >
-              Loading…
-            </iframe>
-          </div>
+          <form
+            action="mailto:waseemisle@gmail.com"
+            method="post"
+            encType="text/plain"
+            className="mt-8 rounded-[1.5rem] border border-white/10 bg-white/5 p-4 sm:p-6"
+          >
+            <div className="grid gap-4 md:grid-cols-2">
+              <label className="text-sm text-white/80">
+                <span className="mb-2 block">Name</span>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  className="w-full rounded-xl border border-white/10 bg-[#161616] px-4 py-3 text-white outline-none placeholder:text-white/40"
+                />
+              </label>
+              <label className="text-sm text-white/80">
+                <span className="mb-2 block">Email</span>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  className="w-full rounded-xl border border-white/10 bg-[#161616] px-4 py-3 text-white outline-none placeholder:text-white/40"
+                />
+              </label>
+            </div>
+
+            <label className="mt-4 block text-sm text-white/80">
+              <span className="mb-2 block">What are you working on?</span>
+              <textarea
+                name="message"
+                rows={5}
+                placeholder="Tell me about your NetSuite, integration, or automation goals."
+                className="min-h-[140px] w-full rounded-xl border border-white/10 bg-[#161616] px-4 py-3 text-white outline-none placeholder:text-white/40"
+              />
+            </label>
+
+            <div className="mt-5 flex flex-wrap items-center gap-3">
+              <button
+                type="submit"
+                className="rounded-full bg-white px-5 py-3 text-sm font-medium text-[#111111] transition hover:bg-white/90"
+              >
+                Send message
+              </button>
+              <a
+                href="mailto:waseemisle@gmail.com"
+                className="text-sm text-white/70 underline decoration-white/30 underline-offset-4 transition hover:text-white"
+              >
+                Open email directly
+              </a>
+            </div>
+          </form>
         </div>
       </section>
     </main>
