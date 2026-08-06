@@ -30,8 +30,13 @@ const projects = [
     details: ["Products", "Orders", "Inventory", "Customers", "Price levels"],
   },
   {
-    title: "Magento • Amazon • NetSuite",
-    summary: "Automotive commerce integrations spanning marketplace and ERP systems.",
+    title: "Magento 2 • NetSuite",
+    summary: "Automotive commerce integrations spanning Magento 2 and ERP systems.",
+    details: ["Products", "Orders", "Inventory", "Customers", "Pricing"],
+  },
+  {
+    title: "Amazon • NetSuite",
+    summary: "Marketplace synchronization for catalog, orders, and inventory data.",
     details: ["Products", "Orders", "Inventory", "Customers", "Pricing"],
   },
   {
@@ -276,6 +281,9 @@ export default function Home() {
               <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">
                 Let&apos;s build resilient systems that move your business forward.
               </h2>
+              <p className="mt-4 max-w-xl text-base leading-7 text-white/70">
+                Fill out the form below and I&apos;ll get back to you about your NetSuite, integration, or automation project.
+              </p>
             </div>
             <div className="space-y-4 text-base text-white/80">
               <a href="mailto:waseemisle@gmail.com" className="block transition hover:text-white">
@@ -288,6 +296,17 @@ export default function Home() {
                 LinkedIn / waseemakhtarr
               </a>
             </div>
+          </div>
+
+          <div className="mt-8 rounded-[1.5rem] border border-white/10 bg-white/5 p-4 sm:p-6">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1QDe-KzZwfoF4DERBopuiqIWINM8qWIrLtZqp-kbhVk0/viewform?embedded=true"
+              className="min-h-[700px] w-full rounded-[1rem] border-0"
+              title="Contact form"
+              allowFullScreen
+            >
+              Loading…
+            </iframe>
           </div>
         </div>
       </section>
