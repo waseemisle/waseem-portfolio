@@ -135,7 +135,7 @@ export default function Home() {
             <p className="mb-5 text-sm uppercase tracking-[0.3em] text-black/60">
               Senior NetSuite Technical Consultant
             </p>
-            <h1 className="text-4xl leading-[0.95] sm:text-5xl lg:text-7xl">
+            <h1 className="text-4xl font-light leading-[0.95] tracking-[-0.02em] sm:text-5xl lg:text-7xl">
               I design and build integrations that keep commerce, finance, and operations in sync.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-black/70">
@@ -207,7 +207,7 @@ export default function Home() {
             <div>
               <p className="text-sm uppercase tracking-[0.3em] text-black/60">Selected Work</p>
               <h2 className="mt-2 text-3xl font-semibold sm:text-4xl">
-                Integration projects across commerce, finance, and operational systems.
+                Selected integrations and solutions delivered
               </h2>
             </div>
             <p className="max-w-xl text-base leading-7 text-black/70">
